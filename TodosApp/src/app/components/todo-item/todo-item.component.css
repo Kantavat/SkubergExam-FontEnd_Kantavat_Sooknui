@@ -1,0 +1,24 @@
+.todoWrapper {
+    border-bottom: 1px solid #efefef;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .removeTodo {
+    font-size: medium;
+    margin-right: 20px;
+    outline: none;
+    box-shadow: none;
+    border-width: 3px;
+    border-radius: 3px;
+    border-style: solid;
+    padding: 8px;
+    color: #ff5e5e;
+    border-color:#ff5e5e;
+    background-color: transparent;
+  }
+.done{     
+    color:#DCDCDC;    
+}
+.todoWrapper:hover {     
+    background-color:#ffffc7;    
+}

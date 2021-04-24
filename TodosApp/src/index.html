@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>TodosApp</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <app-root></app-root>
+</body>
+</html>
+
+<button id ="demo" onclick="fix()">Reset</button><span>Click this to initial localstorage and relaunch the ToDoLists</span>
+<script>
+
+  todos=[{"id":1,"text":"A","done":false}];
+  function fix() {
+
+    document.getElementById("demo")
+    localStorage.setItem('todos',JSON.stringify({todos}));
+    window.location.reload();
+  }
+
+</script>

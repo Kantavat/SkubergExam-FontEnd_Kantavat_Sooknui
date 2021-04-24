@@ -1,0 +1,9 @@
+
+<div class="todoWrapper" (click)="toggleDone()"><!--If click this it will change text color 
+                                             by activate class done(in todo-item.component.ts)-->
+  <tr >
+    <td><button class="removeTodo" (click)="removeTodo()">remove</button></td><!--Remove list button
+                                                            by activate removeTodo()(in todo-item.component.ts)-->
+    <td  [class.done]="isActive" >{{todo.text}}</td><!--[class.done] -> To control tne combined class(in todo-item.component.ts)-->
+  </tr>
+</div>
